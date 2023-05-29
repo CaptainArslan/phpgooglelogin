@@ -16,4 +16,6 @@ $client = new Google\Client();
 $client->setAuthConfig($credentials);
 $client->addScope("https://www.googleapis.com/auth/business.manage");
 $redirect_uri = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+$client->setAccessType('offline');
+
 
